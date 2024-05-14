@@ -1,0 +1,19 @@
+:root {
+    --ASH-grid-gap-size:20px;
+    --ASH-grid-min-card-width: 450px;
+}
+
+
+.ASH-grid-container-static-gap {
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(var(--ASH-grid-min-card-width) , 1fr));
+    gap: var(--ASH-grid-gap-size) var(--ASH-grid-gap-size);
+}
+
+
+.ASH-grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, var(--ASH-grid-min-card-width));
+    justify-content: space-evenly;
+    row-gap: var(--ASH-grid-gap-size);
+}

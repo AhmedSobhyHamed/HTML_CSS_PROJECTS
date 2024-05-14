@@ -1,0 +1,883 @@
+
+@import url("./normalize.css");
+@import url("./generalroles.css");
+@import url("./lib/container.css");
+@import url("./lib/list.css");
+@import url("./lib/grid.css");
+
+
+/* nav */
+nav {
+    position: absolute;
+    width: 100%;
+    z-index: 2;
+}
+.flex-row {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+}
+nav a>img {
+    height: 40px;
+}
+@media (min-width: 768px) {
+    nav .ASH-icon {
+        display: none !important;
+    }
+}
+    nav .ASH-list-body .ASH-list-ul-drop {
+        min-width: calc(100% - var(--ASH-container-padding) * 2);
+        right: var(--ASH-container-padding);
+    }
+    nav .ASH-list-body{ position: static !important; }
+    nav .ASH-list-body::after {
+        content: "";
+        height: 1px;
+        background-color: #555;
+        width: 100%;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+    }
+    nav .ASH-list-body .ASH-list-ul-flex li a { 
+        position: relative;  
+        padding: 30px 10px;
+    }
+    nav .ASH-list-body .ASH-list-ul-flex li a.active,
+    nav .ASH-list-body .ASH-list-ul-flex li a:hover {
+        color: #19c8fa;
+        border-bottom: 1px solid #19c8fa;
+        z-index: 3;
+    }
+    nav .ASH-list-body form {
+        height: 30px;
+        width: 40px;
+        position: relative;
+        margin-left: 20px;
+        border-left: 1px solid white;
+    }
+    nav .ASH-list-body form i{
+        color: white;
+        font-size: 20px;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        right: 0;
+    }
+    .ASH-list-body .ASH-list-ul-drop.ASH-list-arw1tr::before {
+        right: 60px;
+    }
+/* -------------- */
+/* header */
+.head {
+    height: 100vh;
+    background-color: #252525;
+    background-image: url("https://elzerowebschool.github.io/HTML_And_CSS_Template_Two/images/landing.jpg");
+    background-size: cover;
+    position: relative;
+}
+.shade {
+    background-color: rgb(0 0 0 / 50%);
+    height: 100%;
+
+}
+.headtext {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 50%;
+    padding: 40px;
+    background-color: #19c8fa50;
+    display: flex;
+    justify-content: flex-end;
+    color: white;
+}
+.headtext >div {
+    width: 500px;
+}
+@media (max-width:768px) {
+    .headtext {
+        width: 100%;
+    }
+    .headtext >div {
+        margin: auto;
+    }
+}
+.headtext > div > h1 {
+    margin-top: 0;
+    font-size: 32px;
+    font-weight: normal;
+    line-height: 1.5;
+}
+.headtext > div > p {
+    font-size: 14px;
+    line-height: 2;
+}
+.head > i.fa-2x {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    color: white;
+}
+@media (max-width: 768px) {
+    .head > i.fa-2x {
+        display: none;
+    }
+}
+.head > i.fa-angle-right {
+    right: 30px;
+}
+.head > i.fa-angle-left {
+    left: 30px;
+}
+.head .bullets {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 10px;
+    bottom: 40px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.head .bullets li {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: 1px solid white;
+}
+/* -------------- */
+/* service */
+section:first-of-type .text{
+    padding: 0;
+}
+section:first-of-type .text h1{
+    margin-bottom: 30px;
+    margin-top: 0;
+    color: #19c8fa;
+}
+@media (max-width:578px) {
+    section:first-of-type .text h1{
+        font-size: 20px;
+    }
+    .zamash {
+        grid-template-columns: repeat(auto-fill,minmax(300px , 1fr));
+    }
+}
+section:first-of-type .text p{
+    line-height: 2;
+    color: #777;
+}
+/* ------------- */
+/* mob */
+.headtext2 {
+    width: 50%;
+    padding: 40px;
+    background-color: #19c8fa50;
+    color: white;
+}
+.headtext2 >div {
+    width: 500px;
+}
+@media (max-width:768px) {
+    .headtext2 {
+        width: 100%;
+    }
+    .headtext2 >div {
+        margin: auto;
+    }
+}
+.headtext2 > div > h1 {
+    margin-top: 0;
+    font-size: 32px;
+    font-weight: normal;
+    line-height: 1.5;
+}
+.headtext2 > div > p,
+.headtext2 ul  li {
+    font-size: 14px;
+    line-height: 2;
+}
+.headtext2 ul {
+    list-style: none;
+    padding-left: 0;
+    margin: 0;
+}
+.headtext2 ul li {
+    position: relative;
+}
+.headtext2 ul li::before {
+    position: absolute;
+    left: -20px;
+    top: 50%;
+    transform: translateY(-50%);
+    content: "\f108";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    margin-right: 10px;
+}
+.bgimg {
+    background-color: #252525;
+    background-image: url("https://elzerowebschool.github.io/HTML_And_CSS_Template_Two/images/design-features.jpg");
+    background-size: cover;
+    height: 600px;
+    overflow: hidden;
+}
+.bgimg img {
+    position: relative;
+    bottom: -180px;
+}
+@media (max-width:578px) {
+    .nnn{
+        height: auto;
+    }
+    .nnn img {
+        display: none
+    }
+}
+/* ------------- */
+/* proto */
+.porto ul {
+    list-style: none;
+    padding-left: 0;
+    margin: 0;
+    justify-content: center;
+    gap: 10px;
+}
+.porto ul li {
+    padding: 20px;
+    background-color: #19c8fa;
+    color: white;
+    width: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.proto-galary {
+    gap: 5px 0;
+    grid-template-columns: repeat(auto-fill, minmax(300px , 1fr));
+}
+.proto-galary img {
+    display: block;
+    width: 100%;
+}
+.clipimgart {
+    overflow: hidden;
+    position: relative;
+}
+.articlclip  {
+    position: absolute;
+    bottom: -100%;
+    background-color: white;
+    transition: 0.5s;
+    width: 100%;
+    padding: 10px;
+}
+.articlclip h1 {
+    font-weight: normal;
+    margin: 0;
+    margin-bottom: 20px;
+}
+.articlclip p {
+    color: #19c8fa;
+}
+.clipimgart:hover .articlclip {
+    bottom: 0;
+}
+.clipimgart .img {
+    transition: 0.5s;
+}
+.clipimgart:hover .img {
+    transform: scale(1.1) rotate(3deg);
+}
+.more {
+    background-color: #19c8fa;
+    display: block;
+    width: fit-content;
+    color: white;
+    margin: 20px auto;
+    padding: 15px 20px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+/* -------------- */
+/* video */
+.video {
+    padding: 0;
+}
+.video::before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    position: absolute;
+    background-color: #25252588;
+}
+.video video{
+    width: 100%;
+}
+.video div {
+    color: white;
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    margin: 30px 0;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    background-color: #19c8fa88;
+    padding: 60px;
+}
+.video div h2 {
+    font-weight: normal;
+    margin: 0;
+    text-transform: uppercase;
+}
+.video div button {
+    background-color: black;
+    border: 0;
+    padding: 15px 25px;
+    color: white;
+    text-transform: uppercase;
+}
+/* ---------- */
+/* about */
+.about {
+    margin-bottom: 0;
+    overflow: hidden;
+    text-align: center;
+}
+.about > div:last-of-type {
+    position: relative;
+    bottom: -120px;
+    margin-top: -120px;
+}
+.about > div:last-of-type img {
+    display: block;
+    width: 100%;
+    overflow: hidden;
+}
+@media (min-width: 578px) {
+    .about > div:last-of-type {
+        bottom: -180px;
+        margin-top: -180px;
+    }
+}
+/* ------------- */
+/* numbers */
+.numbers {
+    
+    background-color: #555;background-image: url("https://elzerowebschool.github.io/HTML_And_CSS_Template_Two/images/stats.png");
+    background-size: cover;
+    position: relative;
+}
+.shadeoverlaye::before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    position: absolute;
+    background-color: #25252588;
+}
+.numbers>div {
+    justify-content: center !important;
+    gap: 0 !important;
+    flex-wrap: wrap !important;
+    padding: 50px 0 !important;
+}
+.numbers >div>div {
+    width: 200px;
+    height: 200px;
+    background-color: #19c8fa;
+    color: white;
+    justify-content: center;
+    position: relative;
+    flex-basis: 100%;
+}
+.numbers>div>div>i {
+    border-radius: 50%;
+    background-color: black;
+    padding: 10px;
+}
+@media (min-width:578px) {
+    .numbers >div>div {
+        flex-basis: 50%;
+    }
+}
+@media (min-width:768px) {
+    .numbers >div>div {
+        flex-basis: auto;
+    }
+}
+/* ------------------ */
+/* bars */
+.bars .equal > div {
+    flex: 1;
+}
+@media (max-width: 768px) {
+    .equal {
+        flex-direction: column !important;
+    }
+}
+.tit {
+    text-align: center;
+}
+.tit h3{
+    margin: 0;
+    font-weight: normal;
+    text-transform: uppercase;
+}
+.tit p {
+    color: #777;
+    line-height: 1.8;
+}
+
+
+.bars .card .img {
+    border-radius: 50%;
+    overflow: hidden;
+    width: 200px;
+    margin-right: 20px;
+}
+.bars .card .img img {
+    width: 100%;
+}
+.bars .card p {
+    line-height: 1.8;
+    position: relative;
+    padding-bottom: 50px;
+}
+.bars .card p::before {
+    content: "John Doe, CEO";
+    color: #777;
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+}
+.bars .card p::after {
+    content: "";
+    width: 100%;
+    left: 0;
+    bottom: 0;
+    height: 1px;
+    background-color: #777;
+    position: absolute;
+}
+.bars .pullets {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+.bars .pullets li {
+    border-radius: 50%;
+    border: 2px solid #777;
+    width: 15px;
+    height: 15px;
+}
+.bars .pullets li.active {
+    border-color: #19c8fa;
+    background-color: #19c8fa;
+}
+.progbar {
+    margin-bottom: 40px;
+}
+.progbar > div {
+    height: 30px;
+    background-color: #777;
+    position: relative;
+}
+.progbar > div::before {
+    content: attr(mydata);
+    padding: 5px;
+    background-color: black;
+    border-radius: 4px;
+    position: absolute;
+    top: -30px;
+    color: white;
+    left: 70%;
+}
+.progbar > div::after {
+    content: "";
+    background-color: #19c8fa;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 70%;
+    height: 100%;
+}
+/* ------------ */
+/* qoutes */
+.qoautes {
+    background-color: #252525;
+    background-image: url("https://elzerowebschool.github.io/HTML_And_CSS_Template_Two/images/quote.jpg");
+    background-size: cover;
+    text-align: center;
+    color: white;
+}
+.qoautes q , .qoautes span {
+    position: relative;
+    display: block;
+    font-size: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.qoautes q::before , .qoautes q::after {
+    content: "\f10e";
+    font-family: "Font Awesome 5 Free";
+    font-size: 20px;
+}
+/* ----------- */
+/* pricing */
+.grill {
+    grid-template-columns: repeat(auto-fill, 250px);
+}
+.cont {
+    background-color: #f6f6f6;
+    padding: 0 !important;
+    text-transform: capitalize;
+    font-size: 18px;
+}
+.cont h1 , .cont p , .cont span {
+    margin: 0;
+    padding: 15px;
+}
+.cont header {
+    border-top: 1px solid #19c8fa;
+    border-bottom: 1px solid #19c8fa;
+    width: 100%;
+    text-transform: uppercase;
+}
+.cont header span:last-of-type {
+    font-size: 48px;
+    font-weight: 800;
+    position: relative;
+}
+.cont header span:last-of-type::before {
+    content: "$";
+    font-size: 24px;
+    position: absolute;
+    top: 0;
+    left: -1em;
+}
+.cont header span:last-of-type::after {
+    content: "/mo";
+    font-size: 24px;
+    position: absolute;
+    bottom: 0;
+    right: -2em;
+}
+.cont main span {
+    border-bottom: 1px solid #19c8fa;
+}
+.cont footer {
+    border-top: 1px solid #19c8fa;
+    width: 100%;
+}
+.cont footer button {
+    border: 1px solid #19c8fa;
+    padding: 15px 25px;
+}
+.foot {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+.foot button {
+    padding: 10px 25px;
+    color: white;
+    background-color: #19c8fa;
+    border: none;
+}
+/* ------------- */
+/* input */
+.input-f {
+    background-color: #252525;
+    background-image: url("https://elzerowebschool.github.io/HTML_And_CSS_Template_Two/images/subscribe.jpg");
+    background-size: cover;
+}
+.input-f > div:first-child {
+    justify-content: space-evenly;
+}
+.inputfeild {
+    border: 1px solid white;
+    color: white;
+    flex: 1;
+    padding: 0 !important;
+    gap: 0 !important;
+}
+.inputfeild label {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.inputfeild [type="text"] {
+    flex: 1;
+    background-color: transparent;
+    color: white;
+    caret-color: #19c8fa;
+    border: none;
+    padding-left: 10px;
+}
+.inputfeild [type="text"]::placeholder {
+    color: white;
+}
+.inputfeild * {
+    height: 100%;
+    padding: 20px;
+}
+.inputfeild [type="submit"] {
+    border: none;
+    background-color: #19c8fa;
+    color: white;
+    text-transform: uppercase;
+}
+.inputfeild [type]:focus {
+    outline: none;
+}
+.input-f p {
+    color: white;
+    flex: 1;
+}
+/* ------------- */
+/* message */
+.mes {
+    gap: 30px !important;
+}
+.message {
+    flex: 1;
+}
+.message * {
+    display: block;
+    width: 100%;
+    border: 1ps solid #19c8fa;
+    caret-color: #19c8fa;
+    padding: 15px;
+    margin-bottom: 20px;
+}
+.message *:focus {
+    outline: none;
+}
+.message [type="submit"] {
+    border: none;
+    background-color: #19c8fa;
+    color: white;
+    text-transform: uppercase;
+    width: fit-content;
+    margin-left: auto;
+}
+@media (max-width:577px) {
+    .mes .paragraphs {
+        order: -1;
+    }
+}
+.mes .paragraphs > div{
+    margin-bottom: 60px;
+    font-size: 18px;
+}
+.mes .paragraphs  h4{
+    font-weight: normal;
+}
+.mes .paragraphs p{
+    margin-bottom: 20px;
+    color: #777;
+    font-size: 14px;
+    font-style: italic;
+}
+/* --------------- */
+/* footer */
+.footer {
+    padding: 100px 0 !important;
+    background-color: #252525;
+    background-image: url("https://elzerowebschool.github.io/HTML_And_CSS_Template_Two/images/subscribe.jpg");
+    background-size: cover;
+    color: white;
+}.footer * {
+    position: relative;
+}
+footer img {
+    width: 120px;
+}
+.footer p:first-of-type {
+    font-size: 24px;
+    padding: 20px;
+    border-bottom: 2px solid white;
+}
+.footer div:last-of-type {
+    display: flex;
+    justify-content: space-between;
+    width: 150px;
+}
+.footer p:last-of-type span {
+    font-weight: bold;
+    color: #19c8fa;
+}
+/* ------------------- */
+
+
+
+
+
+
+
+
+/* ------------------------ */
+
+.title-body {
+    position: relative;
+    margin-bottom: 100px;
+    text-align: center;
+}
+.title-body .header {
+    font-weight: normal;
+    font-size: 40px;
+    color: #555;
+    margin-bottom: 70px;
+    position: relative;
+    text-transform: uppercase;
+}
+.title-body .header::before {
+    content: "";
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 120px;
+    height: 2px;
+    background-color: #555;
+}
+.title-body .header::after {
+    content: "";
+    position: absolute;
+    bottom: -24px;
+    left: 50%;
+    transform: translate(-50% , -50%);
+    width: 10px;
+    height: 10px;
+    background-color: white;
+    border: 2px solid #555;
+    border-radius: 50%;
+}
+
+.title-body .paragraph {
+    width: 500px;
+    margin: auto;
+    line-height: 2;
+    color: #777;
+    max-width: 100%;
+}
+
+/* ---------- */
+
+.flex-row-sp-c,
+.flex-row-sp-s,
+.flex-row-sp-e {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    padding: 20px;
+    gap: 10px;
+}
+.flex-row-sp-c {
+    align-items: center;
+}
+.flex-row-sp-s {
+    align-items: flex-start;
+}
+.flex-row-sp-e {
+    align-items: flex-end;
+}
+
+.flex-row-sp-c.changable,
+    .flex-row-sp-s.changable,
+    .flex-row-sp-e.changable
+    {
+        flex-direction: column;
+    }
+@media (min-width: 578px) {
+    .flex-row-sp-c.changable,
+    .flex-row-sp-s.changable,
+    .flex-row-sp-e.changable
+    {
+        flex-direction: row;
+    }
+}
+
+.flex-row-sp-c.changable-c,
+    .flex-row-sp-s.changable-c,
+    .flex-row-sp-e.changable-c
+    {
+        flex-direction: column;
+        align-items: center;
+    }
+@media (min-width: 578px) {
+    .flex-row-sp-c.changable-c,
+    .flex-row-sp-s.changable-c,
+    .flex-row-sp-e.changable-c
+    {
+        flex-direction: row;
+    }
+    .flex-row-sp-s.changable-c {
+        align-items: flex-start;
+    }
+    .flex-row-sp-e.changable-c {
+        align-items: flex-end;
+    }
+}
+
+.flex-column-sp-c,
+.flex-column-sp-s,
+.flex-column-sp-e {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+    padding: 20px;
+    gap: 10px;
+}
+.flex-column-sp-c {
+    align-items: center;
+}
+.flex-column-sp-s {
+    align-items: flex-start;
+}
+.flex-column-sp-e {
+    align-items: flex-end;
+}
+
+.flex-column-sp-s.changable,
+.flex-column-sp-e.changable
+{
+    align-items: center;
+}
+@media (min-width: 578px) {
+    .flex-column-sp-e.changable
+    {
+        align-items: flex-end;
+    }
+    .flex-column-sp-s.changable
+    {
+        align-items: flex-start;
+    }
+}
+
+
+.shadeoverlaye {
+    position: relative;
+}
+.shadeoverlaye::before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    position: absolute;
+    background-color: #25252588;
+}

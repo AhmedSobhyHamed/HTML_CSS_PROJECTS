@@ -1,0 +1,50 @@
+:root {
+    --ASH-container-padding:15px;
+    --ASH-containerfull-padding:0px;
+    --ASH-section-padding: 60px;
+}
+/* container with width and padding and auto margin */
+.ASH-container {
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: var(--ASH-container-padding);
+    padding-right: var(--ASH-container-padding);
+    width: 100%;
+    position: relative;
+}
+@media (min-width:578px) {
+    .ASH-container {
+        width: 560px;
+    }
+}
+@media (min-width:768px) {
+    .ASH-container {
+        width: 750px;
+    }
+}
+@media (min-width:992px) {
+    .ASH-container {
+        width: 970px;
+    }
+}
+@media (min-width:1200px) {
+    .ASH-container {
+        width: 1170px;
+    }
+}
+
+/* container style full width */
+.ASH-container-full {
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: var(--ASH-containerfull-padding);
+    padding-right: var(--ASH-containerfull-padding);
+    width: 100%;
+    position: relative;
+}
+
+
+.ASH-section {
+    padding-top: var(--ASH-section-padding);
+    padding-bottom: var(--ASH-section-padding);
+}
