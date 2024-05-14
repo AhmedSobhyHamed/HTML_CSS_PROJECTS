@@ -535,6 +535,7 @@ section:first-of-type .text p{
     content: "\f10e";
     font-family: "Font Awesome 5 Free";
     font-size: 20px;
+    font-weight: 900;
 }
 /* ----------- */
 /* pricing */

@@ -1,0 +1,130 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap');
+
+@import url('./all.min.css');
+:root {
+    --main-bkg: #101010;
+    --main-text: #fff;
+    --active-text: #dc2751;
+}
+
+* {
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+}
+
+.active {
+    color: var(--active-text) !important;
+}
+.flex {
+    display: flex;
+}
+
+body {
+    background-color: var(--main-bkg);
+    font-family: 'Poppins', sans-serif;
+    height: 5000px;
+}
+ul {
+    list-style: none;
+}
+.nav {
+    position: sticky;
+    top: 25px;
+    z-index: 5;
+}
+.container {
+    width: 85%;
+    margin: auto;
+    justify-content: space-between;
+    align-items: center;
+}
+.container img {
+    width: 150px;
+}
+.container > div:first-of-type {
+    gap: 10px;
+}
+.container ul {
+    gap: 3px;
+}
+.container ul li a {
+    display: flex;
+    min-width: 80px;
+    height: 50px;
+    align-items: center;
+    color: var(--main-text);
+    font-weight: 700;
+}
+.container ul li a:hover {
+    color: var(--active-text);
+}
+.container .phone {
+    color: var(--main-text);
+    gap: 5px;
+}
+.container .phone .icon {
+    color: var(--active-text);
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+}
+.container .phone .text h5 {
+    font-weight: 700;
+    font-size: 18px;
+}
+.container .phone .text p {
+    font-family: 'Architects Daughter', cursive;
+    color: var(--active-text);
+    font-size: 14px;
+}
+
+.site-wall {
+    background-image: url("https://duruthemes.com/demo/html/acens/dark/images/slider/3.jpg");
+    background-size: cover;
+    position: relative;
+    height: 100vh;
+    color: var(--main-text);
+    text-align: center;
+}
+.site-wall::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: var(--main-bkg);
+    opacity: 0.5;
+}
+.pos-c {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+}
+.site-wall h1 {
+    font-size: 120px;
+}
+.site-wall h1 span {
+    color: transparent;
+    /* text-shadow: 0 0 2px var(--main-text); */
+    -webkit-text-stroke: 1px var(--main-text);
+}
+.site-wall p {
+    font-size: 14px;
+}
+.site-wall button {
+    padding: 20px 30px;
+    background-color: var(--active-text);
+    line-height: 1em;
+    border-radius: calc(40px + 1em);
+    border: none;
+    margin: 30px 0;
+    font-size: 18px;
+    font-weight: 700;
+    text-transform: capitalize;
+    color: var(--main-text);
+}
