@@ -1,6 +1,6 @@
 # HTML_CSS_PROJECTS
-![][repo-image/name.png]
-wih only html and css create a responsive and animated user interface
+![](repo-image/name.png)
+###### wih only html and css create a responsive and animated user interface
 + css
 + html
 + fotawesome
