@@ -186,7 +186,7 @@ git clone
   - projectPage_folder/css/style.css
 - HTML files:
   - projectPage_folder/index.html
-    <!--  -->
+
     <!-- licance -->
 
 ## License
