@@ -1,7 +1,3 @@
-# demonstration video for developer communit
-
-https://www.youtube.com/watch?v=QrMDQQKTNyU
-
 # HTML_CSS_PROJECTS
 
 Three front-end tamplate projects and a small section as a fourth prohect using HTML and CSS.
@@ -163,6 +159,7 @@ git clone
 <br>
 
 **[see an example for user interaction.[video]](http://youtube.com)**
+**[demonstration video for developer communit](https://www.youtube.com/watch?v=QrMDQQKTNyU)**
 
 ## Technologies Used
 
