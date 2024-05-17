@@ -30,6 +30,7 @@ the first three project are popular designs that I took from the Elzero courses.
 ## Features
 
 - Create responsive web pages.
+  <br>
   Example:
 
   ```css
@@ -40,6 +41,7 @@ the first three project are popular designs that I took from the Elzero courses.
   ```
 
 - Using the flexbox system.
+  <br>
   Example:
 
   ```css
@@ -52,6 +54,7 @@ the first three project are popular designs that I took from the Elzero courses.
   ```
 
 - Using the grid system.
+  <br>
   Example:
 
   ```css
@@ -61,6 +64,7 @@ the first three project are popular designs that I took from the Elzero courses.
   ```
 
 - Implementing linear gradient and radial gradient to create a background images.
+  <br>
   Example:
 
   ```css
@@ -71,6 +75,7 @@ the first three project are popular designs that I took from the Elzero courses.
   ```
 
 - Implementing, either a simple transition or a fully animated actions.
+  <br>
   Example:
 
   ```css
@@ -90,6 +95,7 @@ the first three project are popular designs that I took from the Elzero courses.
   ```
 
 - Create a dropdown menu.
+  <br>
   Example:
 
   ```html
@@ -116,6 +122,7 @@ the first three project are popular designs that I took from the Elzero courses.
   ```
 
 - Implementing pseudo-classes and pseudo-elements.
+  <br>
   Example:
 
   ```css
@@ -128,6 +135,7 @@ the first three project are popular designs that I took from the Elzero courses.
   ```
 
 - CSS system to reflect the data from HTML attribute (used in project 3).
+  <br>
   Example:
 
   ```css
