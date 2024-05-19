@@ -7,7 +7,6 @@ Three front-end tamplate projects and a small section as a fourth prohect using 
 
 - [Introduction](#introduction)
 - [Features](#features)
-- [Installation](#installation)
 - [Usage](#usage)
 - [Technologies Used](#technologies-used)
 - [Project Structure](#project-structure)
@@ -145,18 +144,6 @@ the first three project are popular designs that I took from the Elzero courses.
   .skill-bar[data-advance ^= "3"] {}
   ...
   ```
-
-  <!-- get start and how to run with the prerequisites mintion -->
-
-## Installation
-
-1. Clone the repository:
-
-```sh
-git clone
-```
-
-2. open index.html file in your browser.
 
   <!-- usage or how to interact with this technologies like api end points and what they do -->
 
